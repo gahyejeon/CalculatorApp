@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         addStackViews()
     }
     
+    // label 생성
     private func configureUI() {
         view.backgroundColor = .black
         label.text = "\(number)"
