@@ -48,7 +48,7 @@ class ViewController: UIViewController {
             $0.height.equalTo(80)
         }
         button.layer.cornerRadius = 40
-        button.clipsToBounds = true
+        button.clipsToBounds = true  // layer.cornerRadius 와 함께 사용하여 버튼을 둥글게 만들 때 둥근 경계 밖으로 나가는 부분을 잘라내기 위해서 사용 // 동그랗게 보이지 않아서 계속 찾아보고 수정중인데 결국 동그랗지가 않다...
         return button
     }
     
