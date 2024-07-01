@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         }
     }
     
-    // 버튼 생성하는 메서드
+    // 버튼 생성
     private func makeButton(title: String, backgroundColor: UIColor) -> UIButton {
         let button = UIButton()
         button.setTitle(title, for: .normal)
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         return button
     }
     
-    // 수평 스택뷰를 생성하는 메서드
+    // 수평 스택뷰를 생성
     private func makeHorizontalStackView(_ views: [UIView]) -> UIStackView {  // 수평스택뷰 함수
         // 주어진 뷰들을 수평으로 정렬하는 UIStackView 생성
         let stackView = UIStackView(arrangedSubviews: views)
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         return stackView
     }
     
-    // 수직 스택뷰를 생성하는 메서드
+    // 수직 스택뷰를 생성
     private func makeVerticalStackView(_ views: [UIView]) -> UIStackView { // 수직스택뷰
         // 주어진 뷰들을 수직으로 정렬하는 UIStackView 생성
         let stackView = UIStackView(arrangedSubviews: views)
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         return stackView
     }
     
-    // 스택뷰들을 추가하는 메서드
+    // 스택뷰들을 추가
     private func addStackViews() {
         let buttonTitles = ["7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "AC", "0", "=", "/"]
         let operationButtons: Set<String> = ["+", "-", "*", "AC", "=", "/"] // 연산자 버튼들
